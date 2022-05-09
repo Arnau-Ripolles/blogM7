@@ -59,7 +59,8 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
-    public function isAdmin(){
+    public function isAdmin(): int
+    {
 
         return $this->id <= 5;
     }
